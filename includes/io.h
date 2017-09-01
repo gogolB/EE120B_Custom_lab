@@ -1,3 +1,8 @@
+/*
+ * This file is responsible for controlling the LCD Display
+ *
+ */
+
 #ifndef __io_h__
 #define __io_h__
 
