@@ -21,7 +21,7 @@ void Initialize(uint8_t seed)
 // Algorithm adapted from:
 // http://www.arklyffe.com/main/2010/08/29/xorshift-pseudorandom-number-generator/
 // https://en.wikipedia.org/wiki/Xorshift
-uint8_t xorshift32(uint8_t state[static 1])
+uint8_t xorshift8(uint8_t state[static 1])
 {
 	uint8_t x = state[0];
 	x ^= x << 7;
@@ -34,7 +34,7 @@ uint8_t xorshift32(uint8_t state[static 1])
 // Returns a Random Number.
 uint8_t getRandomNumber()
 {
-	return xorshift32(state);
+	return xorshift8(state);
 }
 
 // Returns one of the following sequences:
